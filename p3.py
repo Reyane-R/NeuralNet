@@ -1,3 +1,4 @@
+import numpy as np
 
 inputs = [1, 2, 3 , 2.5]
 
@@ -7,6 +8,12 @@ weights = [[0.2, 0.8, -0.5, 1.0],
 
 biases = [2 ,3, 0.5]
 
+
+outputs = np.dot(weights, inputs) + biases
+
+print(outputs)
+
+'''
 layer_outputs = [] # outputs of current layer
 for neuron_weights , neuron_bias in  zip(weights, biases):
     neuron_output = 0 # output of given neuron
@@ -16,3 +23,4 @@ for neuron_weights , neuron_bias in  zip(weights, biases):
     layer_outputs.append(neuron_output)
     
 print(layer_outputs)
+'''
